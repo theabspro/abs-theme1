@@ -1,0 +1,406 @@
+/* Import Less File */
+/* Font Family */
+/* Layout */
+/* Responsive */
+/* Mixins */
+/* CSS Property */
+/* Colors */
+/* Menu */
+/* TypoGraphy Colors */
+/* Table Border Color */
+/* Color Error */
+/* menu-height */
+/* Mixins */
+.primary_white {
+  background: #4adcc5;
+  color: #fff;
+}
+/* Mixin Gradient */
+.gradient_primary {
+  background-image: linear-gradient(to right, #00dfa5, #00ede2);
+}
+.gradient_secondary {
+  background-image: linear-gradient(173deg, #00ede2, #00dfa5);
+}
+.gradient_green {
+  background-image: linear-gradient(to right, #13bcae, #38ef7d);
+}
+.gradient_yellow {
+  background-image: linear-gradient(to right, #f7971e, #ffd200);
+}
+.gradient_pink_dark {
+  background-image: linear-gradient(to right, #da4453, #89216b);
+}
+.gradient_animation_primary {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Mixin Text Gradient */
+.gradient_text_primary {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(-180deg, #00dfa5, #00ede2);
+}
+/* No Animation Effect */
+.animation_none {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+/* Move Effect */
+.animation_move {
+  -webkit-animation: toBottomFromTop 450ms forwards;
+  -moz-animation: toBottomFromTop 450ms forwards;
+  animation: toBottomFromTop 450ms forwards;
+}
+@-webkit-keyframes toBottomFromTop {
+  49% {
+    -webkit-transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes toBottomFromTop {
+  49% {
+    -moz-transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translateY(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toBottomFromTop {
+  49% {
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+/******************************************************************************
+						Max Width "1190px"  Min Widh "768px"
+*******************************************************************************/
+/******************************************************************************
+						Min Width "1024px"
+*******************************************************************************/
+/******************************************************************************
+						Min Width "991px"
+*******************************************************************************/
+@media only screen and (min-width: 991px) {
+  .row.flex-row {
+    display: flex;
+  }
+  .login-wrap .page-main-content .bg-login {
+    height: 100vh;
+  }
+  .login-wrap .page-main-content .bg-login .center-align {
+    left: 0;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 40px 80px;
+  }
+  .login-wrap .page-main-content .login-content {
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+/******************************************************************************
+						Min Width "768px"
+*******************************************************************************/
+@media only screen and (min-width: 768px) {
+  .modal {
+    text-align: center;
+  }
+  .modal:before {
+    content: '';
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .modal-dialog {
+    margin: 0;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .alert-modal .modal-dialog {
+    width: 360px;
+    text-align: center;
+  }
+  .modal-body {
+    /* overflow-y: auto;
+			overflow-x: hidden; */
+  }
+  .right .modal-body {
+    max-height: 720px;
+  }
+  .modal-content {
+    -webkit-box-shadow: -1px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -1px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: -1px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: -1px 2px 20px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 2px 20px 10px rgba(0, 0, 0, 0.1);
+  }
+  .modal.fade {
+    overflow: hidden;
+  }
+  .right.modal.fade .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 500px;
+    height: 100%;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    right: -500px;
+  }
+  .right.modal.fade.in {
+    height: 100%;
+  }
+  .right.modal.fade.in .modal-dialog {
+    right: 0;
+    -webkit-transition: all ease-in-out 350ms;
+    -moz-transition: all ease-in-out 350ms;
+    -ms-transition: all ease-in-out 350ms;
+    -o-transition: all ease-in-out 350ms;
+    transition: all ease-in-out 350ms;
+  }
+  .right.modal.fade.in .modal-dialog .modal-content {
+    height: 100%;
+  }
+}
+/******************************************************************************
+						Max Width "1600px"
+*******************************************************************************/
+@media only screen and (max-width: 1600px) {
+  .profile-wrap {
+    padding: 22px 25px;
+  }
+  .profile-info .profile-info-title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .avatar-upload .avatar-edit {
+    bottom: 30px;
+  }
+  .avatar-upload .avatar-edit input + label {
+    width: 35px;
+    height: 35px;
+  }
+  .avatar-upload .avatar-preview {
+    /* width: 180px;
+        	height: 180px; */
+  }
+}
+/******************************************************************************
+						Max Width "1366px"
+*******************************************************************************/
+@media only screen and (max-width: 1366px) {
+  .profile-wrap {
+    padding: 20px;
+  }
+  .profile-info .profile-info-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .avatar-upload .avatar-edit input + label {
+    width: 35px;
+    height: 35px;
+  }
+  .avatar-upload .avatar-preview {
+    width: 135px;
+    height: 135px;
+  }
+}
+/******************************************************************************
+						Max Width "768px"
+*******************************************************************************/
+@media only screen and (max-width: 767px) {
+  .card {
+    margin-bottom: 30px;
+  }
+  .col-sm-2:last-child .card {
+    margin-bottom: 0;
+  }
+  .login-wrap .page-main-content .login-content {
+    padding: 25px;
+  }
+  .login-wrap .page-main-content .bg-login {
+    display: none;
+  }
+  .login-wrap .page-main-content .bottom-column {
+    display: block;
+  }
+  .login-wrap .page-main-content .bottom-column .center-align {
+    padding: 35px;
+  }
+  .login-wrap .page-main-content .bottom-column .center-align .login-title {
+    font-size: 30px;
+  }
+  .login-wrap .page-main-content .bottom-column .center-align .login-subtitle {
+    font-size: 22px;
+  }
+  .login-wrap .page-main-content .bottom-column .center-align .login-description {
+    font-size: 16px;
+    padding-top: 0px;
+  }
+  .login-wrap .page-main-content .login-content .img-center {
+    margin-bottom: 20px;
+    max-width: 60%;
+    display: inline-block;
+  }
+  .login-wrap .page-main-content .login-content .login-box {
+    padding: 25px 40px;
+  }
+  .login-wrap .page-main-content .login-content .login-box .form-group {
+    margin-bottom: 20px;
+  }
+  .login-wrap .page-main-content .login-content .login-box .form-title {
+    padding-bottom: 15px;
+  }
+  .login-wrap .page-main-content .login-content .login-box .btn-login {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .modal-body {
+    height: 70vh;
+  }
+}
+/******************************************************************************
+						Desktop Menu Min Width "768px"
+*******************************************************************************/
+@media only screen and (min-width: 991px) {
+  .navbar-header .notify-btn {
+    display: none;
+  }
+  .navbar-collapse ul.dropdown-menu {
+    width: 100%;
+  }
+  .custom-navbar-collapse {
+    display: none!important;
+  }
+}
+/******************************************************************************
+						Laptop Menu Max Width "1400px"
+*******************************************************************************/
+@media only screen and (max-width: 1400px) {
+  header .navbar-default .navbar-nav > li > a {
+    min-width: 70px;
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  header .navbar-default .navbar-nav > li > a .btn.btn-primary,
+  header .navbar-default .navbar-nav > li > a button.btn-primary {
+    padding: 8px 8px 6px;
+    font-size: 13px;
+  }
+  header .navbar-default .navbar-nav > li .dropdown-menu > li > a {
+    font-size: 12px;
+  }
+}
+/******************************************************************************
+						Mobile Menu 
+*******************************************************************************/
+@media only screen and (max-width: 990px) {
+  .navbar-brand {
+    display: inline-block;
+    height: auto;
+    min-height: 65px;
+    max-height: 80px;
+    float: none;
+    margin: 0 auto;
+  }
+  .navbar-header {
+    text-align: center;
+    float: none;
+  }
+  header .navbar-default .navbar-collapse .navbar-nav {
+    display: none!important;
+  }
+  header .navbar-default .navbar-collapse .navbar-nav.navbar-nav {
+    display: none!important;
+  }
+  header .navbar-default .navbar-toggle-icon {
+    display: block!important;
+  }
+}
+@media screen and (orientation: landscape) {
+  /* Your CSS Here*/
+  header .navbar-default .custom-navbar-collapse-block .navbar-nav,
+  header .navbar-default .custom-navbar-collapse-block .profile-block {
+    /* width: 50%;
+						float: left; */
+    margin: 0;
+  }
+  header .navbar-default .custom-navbar-collapse-block .bottom-fixed {
+    /* position: static;
+						width: 100%;
+						float: left; */
+    /* .btn {
+							margin-top: 10px;
+						} */
+  }
+}

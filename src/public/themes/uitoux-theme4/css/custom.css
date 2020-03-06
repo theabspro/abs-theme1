@@ -1,0 +1,102 @@
+/* Timline CSS */
+.timeline {
+    width: 100%;
+    padding: 0px 0px 20px 0;
+    position:relative;
+    box-sizing: border-box;
+    background: transparent;
+}
+.timeline:before {
+    position: absolute;
+    width: 2px;
+    height: calc(100%);
+    background: #FFF;
+    content: "";
+    left: calc(56%);
+}
+.timieline-title {
+    font-size: 14px;
+    width: 185px;
+    margin-top: 0px;
+}
+.timieline-title p {
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+.timeline-content {
+    width: calc(144px);
+    padding: 10px 0;
+    position: relative;
+    right: 0px;
+    color: #ffffff;
+    text-align: right;
+    top: 20px;
+} 
+.timeline-period {
+    left: calc(100% + 40px);
+    position: absolute;
+    display: inline-block;
+    background: #FFF;
+    padding: 3px 8px;
+    white-space: nowrap;
+    border-radius: 2px;
+    top: calc(50% - 19px);
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+}
+/* Check Box */
+.table [type="checkbox"]:checked,
+.table [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.table [type="checkbox"]:checked + label,
+.table [type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 0px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    height: 15px;
+    vertical-align: middle;
+}
+.table [type="checkbox"]:checked + label:before,
+.table [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00dfa5;
+    background: #ffffff;
+    border-radius: 4px;
+}
+.table [type="checkbox"]:not(:checked) + label:before {
+    border-color:#777777;
+}
+.table [type="checkbox"]:checked + label:after,
+.table [type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #00dfa5;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+.table [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.table [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}

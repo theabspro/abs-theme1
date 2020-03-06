@@ -1,0 +1,31 @@
+{
+    "name": "abs/uitoux-theme4-pkg",
+    "description": "Admin Theme 4 by UITOUX",
+    "type": "library",
+    "require":
+    {},
+    "require-dev":
+    {},
+    "authors": [
+    {
+        "name": "Abdul",
+        "email": "abdulpro@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "extra":
+    {
+        "laravel":
+        {
+            "providers": [
+                "Abs\\UitouxTheme4Pkg\\UitouxTheme4PkgServiceProvider"
+            ]
+        }
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Abs\\UitouxTheme4Pkg\\": "src/"
+        }
+    }
+}
