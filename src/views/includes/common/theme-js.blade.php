@@ -30,3 +30,4 @@
 <script src="{{ asset('public/vendor/select2/js/select2.full.min.js')}}"></script>
 <script src="{{ asset('public/vendor/select2/js/bootstrap-multiselect.js')}}"></script>
 <script src="{{ asset('public/vendor/select2/js/select-custom.js')}}"></script>
+<script src="{{ asset('public/themes/'.$theme.'/js/theme.js')}}"></script>
